@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile2Activity"
+    android:background="@color/pale_grey">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:background="@drawable/background_gradient"/>
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/menu"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/profile"
+        android:fontFamily="@font/robotomedium"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avatar_diver_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Bergen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotolight"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:text="New York, NY"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/robotolight"/>
+
+    <RelativeLayout
+        android:id="@+id/box1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_marginTop="17dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/titleAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:fontFamily="@font/robotolight"
+            android:textColor="@color/coral"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleAbout"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/robotolight"
+            android:gravity="center"
+            android:textColor="@color/warm_grey"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            android:textSize="16sp"
+            android:lineHeight="24sp"/>
+
+        <LinearLayout
+            android:id="@+id/boxSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/twitter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                android:src="@drawable/twitter_logo_button_2"/>
+
+            <ImageButton
+                android:id="@+id/instagram"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                android:src="@drawable/capa_1"/>
+
+            <ImageButton
+                android:id="@+id/facebook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                android:src="@drawable/facebook_logo_button_2"/>
+
+            <ImageButton
+                android:id="@+id/google"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                android:src="@drawable/google_plus_logo_button"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/box2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/box1"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/titleConnections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connections"
+            android:fontFamily="@font/robotolight"
+            android:textColor="@color/coral"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/boxConnections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleConnections"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="21dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:src="@drawable/avatar_astronaut"/>
+
+            <ImageButton
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/transparent"
+                android:src="@drawable/avatar_detective"/>
+
+            <ImageButton
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/transparent"
+                android:src="@drawable/avatar_diver_mini"/>
+
+            <ImageButton
+                android:id="@+id/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:src="@drawable/avatar_disc_jockey"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_gradientbutton"
+        android:text="@string/connect"
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotomedium"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/menu"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/signup"
+        android:fontFamily="@font/robotomedium"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:fontFamily="@font/robotolight"
+        android:text="@string/signup"
+        android:textColor="@color/white"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Design UI Kit"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotolight"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/userBox"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:layout_below="@id/subtitle"
+        android:layout_marginTop="66dp"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/background_buttonwhite">
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/username"
+            android:textColorHint="@color/warm_grey"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:fontFamily="@font/robotolight"
+            android:paddingLeft="20dp"
+            android:textColor="@color/warm_grey"
+            android:background="@color/white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey"/>
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/email"
+            android:textColorHint="@color/warm_grey"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:fontFamily="@font/robotolight"
+            android:paddingLeft="20dp"
+            android:textColor="@color/warm_grey"
+            android:background="@color/white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey"/>
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/password"
+            android:textColorHint="@color/warm_grey"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:fontFamily="@font/robotolight"
+            android:paddingLeft="20dp"
+            android:textColor="@color/warm_grey"
+            android:background="@color/white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/country"
+                    android:textColorHint="@color/warm_grey"
+                    android:gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/robotolight"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/warm_grey"
+                    android:background="@color/white"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/seta"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="25dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/city"
+                    android:textColorHint="@color/warm_grey"
+                    android:gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/robotolight"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/warm_grey"
+                    android:background="@color/white"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/seta"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="25dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/userBox"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_buttonwhite"
+        android:text="@string/signup"
+        android:textColor="@color/coral"
+        android:textSize="14sp"
+        android:fontFamily="@font/robotomedium"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALLREADY HAVE AN ACCOUNT? "
+            android:fontFamily="@font/robotolight"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/loginText"
+            android:text="@string/login"
+            android:fontFamily="@font/robotomedium"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

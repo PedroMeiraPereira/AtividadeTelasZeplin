@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_grey"
+    tools:context=".RadioActivity">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/background_headerprofile"/>
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/menu"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/radio"
+        android:fontFamily="@font/robotomedium"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:id="@+id/box1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn1"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/pinkish_grey"
+                android:checked="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brian Tucker"
+                android:fontFamily="@font/robotolight"
+                android:textColor="@color/warm_grey"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/coral"
+                android:checked="true"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dennis Spencer"
+                android:fontFamily="@font/robotolight"
+                android:textColor="@color/coral"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn3"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/pinkish_grey"
+                android:checked="false"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daniel Grant"
+                android:fontFamily="@font/robotolight"
+                android:textColor="@color/warm_grey"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn4"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/pinkish_grey"
+                android:checked="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="21dp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heather Jacobs"
+                android:fontFamily="@font/robotolight"
+                android:textColor="@color/warm_grey"
+                android:textSize="16sp"
+                android:layout_marginBottom="21dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/box2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@id/box1"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brian Tucker"
+            android:fontFamily="@font/robotolight"
+            android:textColor="@color/warm_grey"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:buttonTint="@color/pinkish_grey"
+            android:checked="false"/>
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_below="@id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dennis Spencer"
+            android:fontFamily="@font/robotolight"
+            android:textColor="@color/warm_grey"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+        <RadioButton
+            android:layout_below="@id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:buttonTint="@color/pinkish_grey"
+            android:checked="false"/>
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_below="@id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daniel Grant"
+            android:fontFamily="@font/robotolight"
+            android:textColor="@color/coral"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+        <RadioButton
+            android:layout_below="@id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:buttonTint="@color/coral"
+            android:checked="true"/>
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_below="@id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heather Jacobs"
+            android:fontFamily="@font/robotolight"
+            android:textColor="@color/warm_grey"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="21dp"/>
+        <RadioButton
+            android:layout_below="@id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:buttonTint="@color/pinkish_grey"
+            android:checked="false"
+            android:layout_marginBottom="21dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/box3"
+        android:layout_below="@id/box2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/pale_grey">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/pinkish_grey"
+                    android:checked="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brian"
+                    android:fontFamily="@font/robotolight"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/coral"
+                    android:checked="true"
+                    android:layout_marginLeft="20dp"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dennis"
+                    android:fontFamily="@font/robotolight"
+                    android:textColor="@color/coral"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/pinkish_grey"
+                    android:checked="false"
+                    android:layout_marginLeft="20dp"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daniel"
+                    android:fontFamily="@font/robotolight"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/pinkish_grey"
+                    android:checked="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="21dp"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heather"
+                    android:fontFamily="@font/robotolight"
+                    android:textColor="@color/warm_grey"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="21dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/txtA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gerald"
+                android:fontFamily="@font/robotolight"
+                android:textColor="@color/warm_grey"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:buttonTint="@color/pinkish_grey"
+                android:checked="false"/>
+            <TextView
+                android:id="@+id/txtB"
+                android:layout_below="@id/txtA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Walters"
+                android:fontFamily="@font/robotolight"
+                android:textColor="@color/warm_grey"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioButton
+                android:layout_below="@id/txtA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/pinkish_grey"
+                android:checked="false"/>
+            <TextView
+                android:id="@+id/txtC"
+                android:layout_below="@id/txtB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heather"
+                android:fontFamily="@font/robotolight"
+                android:textColor="@color/coral"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioButton
+                android:layout_below="@id/txtB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/coral"
+                android:checked="true"/>
+            <TextView
+                android:id="@+id/txtD"
+                android:layout_below="@id/txtC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ellis"
+                android:fontFamily="@font/robotolight"
+                android:textColor="@color/warm_grey"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="21dp"/>
+            <RadioButton
+                android:layout_below="@id/txtC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/pinkish_grey"
+                android:checked="false"
+                android:layout_marginBottom="21dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
